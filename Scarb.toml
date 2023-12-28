@@ -1,0 +1,15 @@
+[package]
+name = "rules_account"
+version = "0.1.0"
+
+[lib]
+name = "rules_account"
+
+# See more keys and their definitions at https://docs.swmansion.com/scarb/docs/reference/manifest
+
+[dependencies]
+rules_utils = { git = "https://github.com/ruleslabs/starknet-utils.git" }
+
+[[target.starknet-contract]]
+# Enable Sierra codegen.
+sierra = true
