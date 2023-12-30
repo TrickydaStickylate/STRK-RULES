@@ -1,4 +1,4 @@
-# Starknet Rules account
+# Starknet Rules 
 
 Cairo 1.0 implementation of the Rules account contract.
 
