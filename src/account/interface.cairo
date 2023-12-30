@@ -5,7 +5,7 @@ const ISRC6_ID: felt252 = 0x2ceccef7f994940b3962a6c67e0ba4fcd37df7d131417c604f91
 
 #[starknet::interface]
 trait ISRC6<TContractState> {
-  fn __execute__(self: @TContractState, calls: Array<Call>) -> Array<Span<felt252>>;
+  fn __execute__(self: @TContractState, calls: Array<Call>) -> Array<Span<felt256>>;
   fn __validate__(self: @TContractState, calls: Array<Call>) -> felt252;
   fn is_valid_signature(self: @TContractState, hash: felt252, signature: Array<felt252>) -> felt252;
 }
